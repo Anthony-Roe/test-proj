@@ -1,3 +1,11 @@
 SCR_BaseGameMode TestGameMode1 : "{EB6E51EA70E35A9D}Prefabs/MP/Modes/TestGameMode.et" {
+ components {
+  EPF_PersistenceManagerComponent "{609120073EF7262E}" {
+   m_fAutosaveInterval 10
+  }
+ }
  coords 111.946 1 172.479
+}
+EPF_SpawnPoint {
+ coords 110.48 1 176.249
 }

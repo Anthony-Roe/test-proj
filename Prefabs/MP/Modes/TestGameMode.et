@@ -1,9 +1,11 @@
 SCR_BaseGameMode {
  ID "609120072D5E712C"
  components {
-  EPF_BasicRespawnSystemComponent "{60912007210761E3}" {
-  }
   EPF_PersistenceManagerComponent "{609120073EF7262E}" {
+   components {
+    EPF_BasicRespawnSystemComponent "{60912277055439AC}" {
+    }
+   }
    m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{6091200738044570}" {
     m_sDatabaseName "TEST"
    }
@@ -158,7 +160,7 @@ SCR_BaseGameMode {
  coords 1076.468 51.001 1325.247
  Flags 0
  {
-  SCR_FactionManager : "{A1C54BBE72C5C696}Prefabs/MP/Managers/Factions/FactionManager_FFA.et" {
+  SCR_FactionManager "60912275098A2FF0" : "{A1C54BBE72C5C696}Prefabs/MP/Managers/Factions/FactionManager_FFA.et" {
    ID "609120075E53646B"
    coords 0 0 0
   }
