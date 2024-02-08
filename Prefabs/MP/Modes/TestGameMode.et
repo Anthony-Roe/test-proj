@@ -1,0 +1,166 @@
+SCR_BaseGameMode {
+ ID "609120072D5E712C"
+ components {
+  EPF_BasicRespawnSystemComponent "{60912007210761E3}" {
+  }
+  EPF_PersistenceManagerComponent "{609120073EF7262E}" {
+   m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{6091200738044570}" {
+    m_sDatabaseName "TEST"
+   }
+  }
+  SCR_CallsignManagerComponent "{609120072D5E7123}" {
+  }
+  SCR_DataCollectorComponent "{609120072D5E713B}" {
+   m_aModules {
+    SCR_DataCollectorBasicActionsModule "{609120072D5E7135}" {
+    }
+    SCR_DataCollectorDriverModule "{609120072D5E7130}" {
+    }
+    SCR_DataCollectorShootingModule "{609120072D5E710F}" {
+    }
+    SCR_DataCollectorHealingItemsModule "{609120072D5E710A}" {
+     m_aConsumableTypes {
+      ConsumableTypeStats "{609120072D5E710B}" {
+       m_eConsumableType BANDAGE
+       m_eDataStatsSelf BANDAGE_SELF
+       m_eDataStatsFriend BANDAGE_FRIENDLIES
+      }
+      ConsumableTypeStats "{609120072D5E7109}" {
+       m_eConsumableType TOURNIQUET
+       m_eDataStatsSelf TOURNIQUET_SELF
+       m_eDataStatsFriend TOURNIQUET_FRIENDLIES
+      }
+      ConsumableTypeStats "{609120072D5E7107}" {
+       m_eConsumableType SALINE
+       m_eDataStatsSelf SALINE_SELF
+       m_eDataStatsFriend SALINE_FRIENDLIES
+      }
+      ConsumableTypeStats "{609120072D5E59F7}" {
+       m_eConsumableType MORPHINE
+       m_eDataStatsSelf MORPHINE_SELF
+       m_eDataStatsFriend MORPHINE_FRIENDLIES
+      }
+     }
+    }
+    SCR_DataCollectorCrimesModule "{609120072D5E59F0}" {
+     m_aLightBanPunishments {
+      5 15
+     }
+     m_aHeavyBanPunishments {
+      120 480 1440
+     }
+    }
+    SCR_DataCollectorAchievementsModule "{609120072D5E59EE}" {
+    }
+   }
+  }
+  SCR_DestructionManagerComponent "{609120072D5E59EF}" {
+  }
+  SCR_EntityCatalogManagerComponent "{609120072D5E59EC}" {
+   m_aEntityCatalogs {
+    SCR_EntityCatalogMultiList "{5C9AD18D9D38E99E}" : "{EAD206A79A774696}Configs/EntityCatalog/FactionLess/EntityCatalog_Characters.conf" {
+    }
+    SCR_EntityCatalogMultiList "{5C9AD18D9B68853E}" : "{77243A71AF0E5A75}Configs/EntityCatalog/FactionLess/EntityCatalog_Vehicles.conf" {
+    }
+    SCR_EntityCatalogMultiList "{5C9AD18D98F9181C}" : "{BB12292052E2F5B8}Configs/EntityCatalog/FactionLess/EntityCatalog_InventoryItems.conf" {
+    }
+    SCR_EntityCatalog "{5C9EDDD29E61EF44}" : "{B80293331FB7BFCF}Configs/EntityCatalog/FactionLess/EntityCatalog_SupplyContainerItems.conf" {
+    }
+   }
+  }
+  SCR_GameModeHealthSettings "{609120072D5E59E8}" {
+  }
+  SCR_GameOverScreenManagerComponent "{609120072D5E59E9}" {
+   m_GameOverScreenConfig SCR_GameOverScreenConfig "{56DEC6462FFDD82D}" : "{651583FFFB7FC765}Configs/GameOverScreen/GameOverScreensConfig.conf" {
+   }
+  }
+  SCR_GroupsManagerComponent "{609120072D5E59E4}" {
+   m_sDefaultGroupPrefab "{8B4D49A9F324E7D5}Prefabs/Groups/PlayableGroup.et"
+   m_iPlayableGroupFrequencyOffset 500
+  }
+  SCR_HintManagerComponent "{609120072D5E59E5}" {
+  }
+  SCR_MapConfigComponent "{609120072D5E59E3}" {
+  }
+  SCR_MapMarkerManagerComponent "{609120072D5E59E0}" {
+  }
+  SCR_NametagConfigComponent "{609120072D5DF17C}" {
+  }
+  SCR_NightModeGameModeComponent "{609120072D5DF17D}" {
+  }
+  SCR_NotificationSenderComponent "{609120072D5DF102}" {
+   m_aKillfeedTypeNames {
+    SCR_NotificationKillfeedTypeName "{609120072D5DF100}" {
+     m_iKillfeedType DISABLED
+     m_sKillfeedTypeName "#AR-Notification_KillfeedType_DISABLED"
+    }
+    SCR_NotificationKillfeedTypeName "{609120072D5DF101}" {
+     m_iKillfeedType UNKNOWN_KILLER
+     m_sKillfeedTypeName "#AR-Notification_KillfeedType_UNKNOWN_KILLER"
+    }
+    SCR_NotificationKillfeedTypeName "{609120072D5DF106}" {
+     m_iKillfeedType FULL
+     m_sKillfeedTypeName "#AR-Notification_KillfeedType_FULL"
+    }
+   }
+   m_aKillfeedReceiveTypeNames {
+    SCR_NotificationKillfeedreceiveTypeName "{609120072D5DF104}" {
+     m_iKillfeedreceiveType ALL
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_ALL"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{609120072D5DF105}" {
+     m_iKillfeedreceiveType ALLIES_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_ALLIES_ONLY"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{609120072D5DF10A}" {
+     m_iKillfeedreceiveType SAME_FACTION_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_SAME_FACTION_ONLY"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{609120072D5DB509}" {
+     m_iKillfeedreceiveType GROUP_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_GROUP_ONLY"
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{609120072D5DB508}" {
+     m_iKillfeedreceiveType ENEMIES_ONLY
+     m_sKillfeedReceiveTypeName "#AR-Notification_KillfeedReceiveType_ENEMIES_ONLY"
+    }
+   }
+   m_PlayerKickReasonsConfig SCR_ConfigurableDialogUiPresets "{5AD6C337FC7F76C0}" : "{D3BFEE28E7D5B6A1}Configs/ServerBrowser/KickDialogs.conf" {
+   }
+  }
+  SCR_PlayersRestrictionZoneManagerComponent "{609120072D5DB50A}" {
+  }
+  SCR_PossessingManagerComponent "{609120072D5DB50D}" {
+  }
+  SCR_RadialMenuItemsComponent "{609120072D5DB50C}" {
+   m_MenuController SCR_RadialMenuController "{609120072D5DB50F}" {
+    m_RMControls SCR_RadialMenuControllerInputs "{609120072D5DB511}" {
+     m_sControllerContext "WeaponSelectionContext"
+     m_sOpenAction "Inventory_WeaponSwitchingRadial"
+     m_bCloseOnPerform 1
+     m_bShowWhileUnconcious 0
+    }
+   }
+  }
+  SCR_ReconnectComponent "{609120072D5DB513}" {
+  }
+  SCR_SpawnerAIGroupManagerComponent "{609120072D5D6D2F}" {
+  }
+  SCR_SupportStationManagerComponent "{609120072D5D6D20}" {
+  }
+  SCR_VotingManagerComponent "{5650BB6B6089393A}" : "{37037CBB8B4CD354}Prefabs/MP/Components/VotingManagerComponent.ct" {
+  }
+  RplComponent "{609120072D5D6D23}" {
+   "Rpl State Override" None
+   Streamable Disabled
+  }
+ }
+ coords 1076.468 51.001 1325.247
+ Flags 0
+ {
+  SCR_FactionManager : "{A1C54BBE72C5C696}Prefabs/MP/Managers/Factions/FactionManager_FFA.et" {
+   ID "609120075E53646B"
+   coords 0 0 0
+  }
+ }
+}

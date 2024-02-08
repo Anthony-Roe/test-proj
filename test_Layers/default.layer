@@ -1,0 +1,3 @@
+SCR_BaseGameMode TestGameMode1 : "{EB6E51EA70E35A9D}Prefabs/MP/Modes/TestGameMode.et" {
+ coords 111.946 1 172.479
+}
